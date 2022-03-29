@@ -4,7 +4,6 @@ using UdonSharp;
 using UnityEngine;
 using UnityEngine.UI;
 using VRC.SDKBase;
-using Random = UnityEngine.Random;
 
 namespace Cyan.PlayerObjectPool
 {
@@ -35,7 +34,7 @@ namespace Cyan.PlayerObjectPool
             // Initialize the object here
             if (Owner.isLocal)
             {
-                _SetValue(Random.Range(0, 100));
+                _SetValue(UnityEngine.Random.Range(0, 100));
             }
         }
 
